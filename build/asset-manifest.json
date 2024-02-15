@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Student-Database/static/css/main.a5db7f24.css",
+    "main.js": "/Student-Database/static/js/main.f61bc483.js",
+    "index.html": "/Student-Database/index.html",
+    "main.a5db7f24.css.map": "/Student-Database/static/css/main.a5db7f24.css.map",
+    "main.f61bc483.js.map": "/Student-Database/static/js/main.f61bc483.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a5db7f24.css",
+    "static/js/main.f61bc483.js"
+  ]
+}

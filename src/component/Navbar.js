@@ -13,19 +13,19 @@ export default function Navbar(props) {
                     <div className="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul className="navbar-nav me-auto mb-2 mb-lg-0 nav-ul">
                             <li className="nav-item">
-                                <Link className={`nav-link ${props.loc === "home" ? "active" : ""}`} aria-current="page" to="/">Home</Link>
+                                <Link className={`nav-link ${props.loc === "home" ? "active" : ""}`} aria-current="page" to="/Student-Database">Home</Link>
                             </li>
                             <li className="nav-item">
-                                <Link className={`nav-link ${props.loc === "insertdetails" ? "active" : ""}`} aria-current="page" to="/insertdetails">Insert Details</Link>
+                                <Link className={`nav-link ${props.loc === "insertdetails" ? "active" : ""}`} aria-current="page" to="/Student-Database/insertdetails">Insert Details</Link>
                             </li>
                             <li className="nav-item">
-                                <Link className={`nav-link ${props.loc === "insertmarks" ? "active" : ""}`} aria-current="page" to="/insertmarks">Insert Marks</Link>
+                                <Link className={`nav-link ${props.loc === "insertmarks" ? "active" : ""}`} aria-current="page" to="/Student-Database/insertmarks">Insert Marks</Link>
                             </li>
                             <li className="nav-item">
-                                <Link className={`nav-link ${props.loc === "fetchdetails" ? "active" : ""}`} aria-current="page" to="/fetchdetails">Fetch Details</Link>
+                                <Link className={`nav-link ${props.loc === "fetchdetails" ? "active" : ""}`} aria-current="page" to="/Student-Database/fetchdetails">Fetch Details</Link>
                             </li>
                             <li className="nav-item">
-                                <Link className={`nav-link ${props.loc === "fetchmarks" ? "active" : ""}`} aria-current="page" to="/fetchmarks">Fetch Marks</Link>
+                                <Link className={`nav-link ${props.loc === "fetchmarks" ? "active" : ""}`} aria-current="page" to="/Student-Database/fetchmarks">Fetch Marks</Link>
                             </li>
                         </ul>
                     </div>

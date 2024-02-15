@@ -17,11 +17,11 @@ function App() {
       <div className='back'></div>
       <Router>
         <Routes>
-          <Route path="/" element={<div> <Navbar loc="home" /> <Home /></div>} />
-          <Route path="/insertdetails" element={<div> <Navbar loc="insertdetails" /> <Insert /> </div>} />
-          <Route path="/insertmarks" element={<div> <Navbar loc="insertmarks" /> <Marks /> </div>} />
-          <Route path="/fetchdetails" element={<div> <Navbar loc="fetchdetails" /> <FetchDetail /> </div>} />
-          <Route path="/fetchmarks" element={<div> <Navbar loc="fetchmarks" /> <FetchMarks /> </div>} />
+          <Route path="/Student-Database" element={<div> <Navbar loc="home" /> <Home /></div>} />
+          <Route path="/Student-Database/insertdetails" element={<div> <Navbar loc="insertdetails" /> <Insert /> </div>} />
+          <Route path="/Student-Database/insertmarks" element={<div> <Navbar loc="insertmarks" /> <Marks /> </div>} />
+          <Route path="/Student-Database/fetchdetails" element={<div> <Navbar loc="fetchdetails" /> <FetchDetail /> </div>} />
+          <Route path="/Student-Database/fetchmarks" element={<div> <Navbar loc="fetchmarks" /> <FetchMarks /> </div>} />
         </Routes>
       </Router>
 

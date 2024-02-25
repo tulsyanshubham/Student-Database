@@ -24,7 +24,7 @@ function App() {
           <Route path="/Student-Database/fetchmarks" element={<div> <Navbar loc="fetchmarks" /> <FetchMarks /> </div>} />
         </Routes>
       </Router>
-
+      {/* <Home /> */}
       {/* <Navbar /> */}
       {/* <Insert /> */}
       {/* <Marks /> */}

@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Anta&display=swap')
+
 /* Chrome, Safari, Edge, Opera */
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
@@ -5,10 +7,16 @@ input::-webkit-inner-spin-button {
   margin: 0;
 }
 
+::-webkit-scrollbar {
+    display: none;
+  }
+
 /* Firefox */
 input[type=number] {
   -moz-appearance: textfield;
 }
+
+
 
 .back {
     background-image: linear-gradient(#FFFDCD , #A3E6FF );
@@ -77,4 +85,40 @@ label {
     .nav-ul{
         gap: 0;
     }
+}
+
+.home-box{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12rem;
+    padding: 2rem 5rem 0 5rem;
+}
+
+.home-right{
+    img{
+        width: 35rem;
+    }
+}
+
+.home-left{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    div{
+        text-align: center;
+    }
+    :nth-child(1){
+        font-size: 60px;
+        font-family: "Anta", sans-serif;
+        font-weight: bolder;
+    }
+    :nth-child(2){
+        font-size: 18px;
+    }
+}
+
+input[type=radio] {
+    background: transparent;
 }

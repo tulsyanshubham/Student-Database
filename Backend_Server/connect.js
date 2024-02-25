@@ -12,8 +12,7 @@ const port = process.env.PORT || 5000;
 
 app.use(express.json());
 // app.use('/submit', require('./restQueries'));
-app.use(cors())
-
+app.use(cors());
 // app.use('/submit', require('./restQueries'));
 
 function executeQuery(query) {
@@ -81,14 +80,15 @@ app.post("/fetchstudent", async (req, res) => {
     let namequery = name ? ` AND s.name LIKE '%${name}%'` : '';
     let usnquery = usn ? ` AND s.usn LIKE '%${usn}%'` : '';
     let deptquery = dept ? ` AND d.dept LIKE '%${dept}%'` : '';
+    let sort = " order by (usn)"
 
-    query += namequery + usnquery + deptquery;
+    query += namequery + usnquery + deptquery + sort;
 
     // console.log(query)
 
     con.query(query, (err, resp) => {
       if (err) throw err;
-      res.json({resp})
+      res.json({ resp })
     });
 
     // const response = { msg: "success" };
@@ -109,14 +109,15 @@ app.post("/fetchmarks", async (req, res) => {
     let namequery = name ? ` AND s.name LIKE '%${name}%'` : '';
     let usnquery = usn ? ` AND s.usn LIKE '%${usn}%'` : '';
     let deptquery = sub_code ? ` AND c.sub_code LIKE '%${sub_code}%'` : '';
+    let sort = " order by (usn)"
 
-    query += namequery + usnquery + deptquery;
+    query += namequery + usnquery + deptquery + sort;
 
     // console.log(query)
 
     con.query(query, (err, resp) => {
       if (err) throw err;
-      res.json({resp})
+      res.json({ resp })
     });
 
     // const response = { msg: "success" };

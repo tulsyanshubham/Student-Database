@@ -42,17 +42,17 @@ export default function FetchMarks() {
                     <div style={{ width: "30%" }}>
                         <label htmlFor="name" className="form-label">Name</label>
                         <input type="text" className="form-control border-2" name="name" id="name"
-                            aria-describedby="emailHelp" onChange={handleInput} style={{background:"none",borderColor:"black"}} />
+                            aria-describedby="emailHelp" onChange={handleInput} style={{ background: "none", borderColor: "black" }} />
                     </div>
                     <div style={{ width: "20%" }}>
                         <label htmlFor="usn" className="form-label">USN</label>
                         <input type="text" className="form-control border-2" name="usn" id="usn"
-                            aria-describedby="emailHelp" onChange={handleInput} style={{background:"none",borderColor:"black"}} />
+                            aria-describedby="emailHelp" onChange={handleInput} style={{ background: "none", borderColor: "black" }} />
                     </div>
                     <div style={{ width: "13%" }}>
                         <label htmlFor="sub_code" className="form-label">Subject Code</label>
                         <input type="text" className="form-control border-2" name="sub_code" id="sub_code"
-                            aria-describedby="emailHelp" onChange={handleInput} style={{background:"none",borderColor:"black"}} />
+                            aria-describedby="emailHelp" onChange={handleInput} style={{ background: "none", borderColor: "black" }} />
                     </div>
                     {/* <div style={{ width: "10%" }}>
                         <label htmlFor="inputGroupSelect01" className="form-label">Dept</label>
@@ -66,13 +66,14 @@ export default function FetchMarks() {
                             <option >EEE</option>
                         </select>
                     </div> */}
-                    <div className='d-flex align-items-end' style={{ width: "5%" }}>
-                        <button type="submit" className="btn btn-primary">Submit</button>
+                    <div className='d-flex align-items-end' style={{ width: "5%", gap: "1rem" }}>
+                        <button type="submit" className="btn btn-dark"><i className="fa-solid fa-magnifying-glass" style={{ color: "#ffffff" }}></i></button>
+                        <button type="reset" className="btn btn-dark"><i className="fa-solid fa-eraser" style={{ color: "#ffffff" }}></i></button>
                     </div>
                 </div>
             </form>
-            <div className='mt-5' style={{width:"100vw"}}>
-                <div style={{display:"flex",flexDirection:"column",alignItems:"center"}}>
+            <div className='mt-5' style={{ width: "100vw" }}>
+                <div style={{ display: "flex", flexDirection: "column", alignItems: "center" }}>
                     <div className='grid-table2 table-head'>
                         <div><strong>Name</strong></div>
                         <div><strong>USN</strong></div>
@@ -83,10 +84,10 @@ export default function FetchMarks() {
                         <div><strong>Average</strong></div>
                     </div>
                     {
-                        load && data.length === 0 ? <h2 className='mt-2' style={{color:"red"}}>No Data Found</h2> :
-                        data.map((val,index)=>(
-                            <Markstuples name={val.name} usn={val.usn} sub_name={val.sub_name} test1={val.test1} test2={val.test2} test3={val.test3} average={val.average} key={val.usn} />
-                        ))
+                        load && data.length === 0 ? <h2 className='mt-2' style={{ color: "red" }}>No Data Found</h2> :
+                            data.map((val, index) => (
+                                <Markstuples name={val.name} usn={val.usn} sub_name={val.sub_name} test1={val.test1} test2={val.test2} test3={val.test3} average={val.average} key={val.usn} />
+                            ))
                     }
                 </div>
             </div>

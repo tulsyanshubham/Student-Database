@@ -6,7 +6,7 @@ export default function Navbar(props) {
         <div>
             <nav className="navbar navbar-expand-lg navbar-dark bg-dark" style={{ position: "fixed", width: "100vw", top: "0" }}>
                 <div className="container-fluid">
-                    <Link className="navbar-brand" to="/">Student Database</Link>
+                    <Link className="navbar-brand" to="/Student-Database">Student Database</Link>
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span className="navbar-toggler-icon"></span>
                     </button>

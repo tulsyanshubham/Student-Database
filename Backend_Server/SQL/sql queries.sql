@@ -65,3 +65,24 @@ WHERE s.usn = m.usn AND m.sub_code = c.sub_code AND s.name LIKE '%sh%' AND s.usn
 -- select * from about;
 -- select * from department;
 -- select * from marks;
+
+-- CREATE TRIGGER update_trigger1
+-- BEFORE INSERT ON students
+-- FOR EACH ROW
+--     UPDATE students
+--     SET name = NEW.name ,
+-- 		gender = NEW.gender ,
+-- 		dob = NEW.dob
+--     WHERE usn = NEW.usn;
+
+-- CREATE TRIGGER update_trigger2
+-- BEFORE INSERT ON about
+-- FOR EACH ROW
+--     UPDATE about
+--     SET fname = NEW.fname,
+--         mname = NEW.mname,
+--         address = NEW.address
+--     WHERE usn = NEW.usn;
+
+-- drop trigger update_trigger1;
+-- drop trigger update_trigger2;

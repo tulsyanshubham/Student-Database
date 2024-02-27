@@ -32,7 +32,6 @@ create table subject (
 	sub_name VARCHAR(10),
     sub_code varchar(10),
     sem int(1),
-    credits int(1),
     primary key (sub_code)
 );
 
@@ -51,15 +50,30 @@ create table marks (
 -- INSERT INTO about values ('1dt21cs147','km tulsyan','radha tulsyan','home');
 -- INSERT INTO about values ('1dt21cs147','km agrawal','radha devi','BOYS HOSTEL-2, DSATM, KANAKAPURA RD, UDAYAPURA');
 -- INSERT INTO department values ('1dt21cs147','cse');
-insert into subject values('CO','21cs23',4,3);
+insert into subject values('COA','21CS34',4);
+insert into subject values('Maths 3','21MAT31',4);
+insert into subject values('DSA','21CS32',4);
+insert into subject values('ADE','21CS33',4);
+insert into subject values('JAVA','21CSL35',4);
+insert into subject values('C++','21CS382',4);
+insert into subject values('DAA','21CS42',4);
+insert into subject values('MES','21CS43',4);
+insert into subject values('OS','21CS44',4);
+insert into subject values('PYTHON','21CSL46',4);
+insert into subject values('R PROGRAM','21CSL483',4);
+insert into subject values('ATCD','21CS51',4);
+insert into subject values('CN','21CS52',4);
+insert into subject values('DBMS','21CS53',4);
+insert into subject values('AIML','21CS54',4);
+insert into subject values('C# & .NET','21CS582',4);
 
 -- SELECT s.name, s.gender, s.usn, d.dept
 -- FROM students s, department d
 -- WHERE s.usn = d.usn AND s.name = 'Shubham' AND s.usn = '1dt21cs147' AND d.dept = 'cse';
 
-SELECT s.name, s.usn, c.sub_name, m.test1, m.test2, m.test3, m.average
-FROM students s, subject c, marks m
-WHERE s.usn = m.usn AND m.sub_code = c.sub_code AND s.name LIKE '%sh%' AND s.usn LIKE '%147%' AND c.sub_code LIKE '%23%';
+-- SELECT s.name, s.usn, c.sub_name, m.test1, m.test2, m.test3, m.average
+-- FROM students s, subject c, marks m
+-- WHERE s.usn = m.usn AND m.sub_code = c.sub_code AND s.name LIKE '%sh%' AND s.usn LIKE '%147%' AND c.sub_code LIKE '%23%';
 
 -- select * from students;
 -- select * from about;

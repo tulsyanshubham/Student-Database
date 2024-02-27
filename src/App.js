@@ -10,6 +10,7 @@ import {
   Routes,
   Route
 } from "react-router-dom";
+import ER from './component/ER';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
       <Router>
         <Routes>
           <Route path="/Student-Database" element={<div> <Navbar loc="home" /> <Home /></div>} />
+          <Route path="/Student-Database/er" element={<div> <Navbar loc="er" /> <ER /> </div>} />
           <Route path="/Student-Database/insertdetails" element={<div> <Navbar loc="insertdetails" /> <Insert /> </div>} />
           <Route path="/Student-Database/insertmarks" element={<div> <Navbar loc="insertmarks" /> <Marks /> </div>} />
           <Route path="/Student-Database/fetchdetails" element={<div> <Navbar loc="fetchdetails" /> <FetchDetail /> </div>} />

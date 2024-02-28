@@ -34,6 +34,10 @@ export default function FetchDetail() {
         setLoad(true);
     }
 
+    const resetHandle = () => {
+        setStudent({ name: "", usn: "", dept: "" });
+    }
+
     return (
         <div className='mt-5 pt-5'>
             <form onSubmit={SubmitEvent}>
@@ -62,7 +66,7 @@ export default function FetchDetail() {
                     </div>
                     <div className='d-flex align-items-end' style={{ width: "5%", gap: "1rem" }}>
                         <button type="submit" className="btn btn-dark"><i className="fa-solid fa-magnifying-glass" style={{ color: "#ffffff" }}></i></button>
-                        <button type="reset" className="btn btn-dark"><i className="fa-solid fa-eraser" style={{ color: "#ffffff" }}></i></button>
+                        <button type="reset" className="btn btn-dark" onClick={resetHandle}><i className="fa-solid fa-eraser" style={{ color: "#ffffff" }}></i></button>
                     </div>
                 </div>
             </form>

@@ -58,7 +58,7 @@ label {
 
 .grid-table2 {
     display: grid;
-    grid-template-columns: 23% 15% 20% 9.5% 9.5% 9.5% 11.5%;
+    grid-template-columns: 22% 18% 18% 9.5% 9.5% 9.5% 11.5%;
     font-size: 1.3rem;
     width: 75%;
     margin-top: 0.2rem;
@@ -121,4 +121,15 @@ label {
 
 input[type=radio] {
     background: transparent;
+}
+
+.errbtn{
+    i{
+        transition: all 0.7s ease-out;
+    }
+}
+.errbtn:hover{
+    i{
+        rotate: -360deg;
+    }
 }

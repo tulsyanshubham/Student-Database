@@ -30,6 +30,10 @@ export default function Insert() {
         document.querySelector(".reset").click();
     }
 
+    const resetHandle = () => {
+        setStudent({ name: "", gender: "", usn: "", dob: "", dept: "", fname: "", mname: "", address: "" });
+    }
+
     return (
         <div className='mt-5 pt-4 d-flex justify-content-center'>
             <form className='insert-form' onSubmit={SubmitEvent}>
@@ -42,13 +46,13 @@ export default function Insert() {
                     <label><span className="form-label">Gender</span></label>
                     <div className="d-flex" name="gender">
                         <div className="form-check mx-3">
-                            <input className="form-check-input border-2" type="radio" name="gender" value="M" id="male" required onChange={handleInput} style={{backgroundColor:"none"}} />
+                            <input className="form-check-input border-2" type="radio" name="gender" value="Male" id="male" required onChange={handleInput} style={{backgroundColor:"none"}} />
                             <label className="form-check-label" htmlFor="male">
                                 Male
                             </label>
                         </div>
                         <div className="form-check mx-3">
-                            <input className="form-check-input border-2" type="radio" name="gender" value="F" id="female" required onChange={handleInput} style={{backgroundColor:"none"}} />
+                            <input className="form-check-input border-2" type="radio" name="gender" value="Female" id="female" required onChange={handleInput} style={{backgroundColor:"none"}} />
                             <label className="form-check-label" htmlFor="female">
                                 Female
                             </label>
@@ -92,7 +96,7 @@ export default function Insert() {
                 </div>
                 <div className="d-flex justify-content-center" style={{gap:"5vw"}}>
                     <button type="submit" className="btn btn-dark">Submit</button>
-                    <button type="reset" className="btn btn-dark reset">Reset</button>
+                    <button type="reset" className="btn btn-dark reset" onClick={resetHandle}>Reset</button>
                 </div>
             </form>
         </div>

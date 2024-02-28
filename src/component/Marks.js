@@ -33,6 +33,10 @@ export default function Marks() {
         document.querySelector(".reset").click();
     }
 
+    const resetHandle = () => {
+        setMarks({ usn: "", sub_code: "", test1: 0, test2: 0, test3: 0, average: 0 });
+    }
+
     return (
         <div className='mt-5 pt-4 d-flex justify-content-center'>
             <form className='insert-form' onSubmit={SubmitEvent}>
@@ -63,7 +67,7 @@ export default function Marks() {
                 </div>
                 <div className="d-flex justify-content-center" style={{gap:"5vw"}}>
                     <button type="submit" className="btn btn-dark">Submit</button>
-                    <button type="reset" className="btn btn-dark reset">Reset</button>
+                    <button type="reset" className="btn btn-dark reset" onClick={resetHandle}>Reset</button>
                 </div>
             </form>
         </div>

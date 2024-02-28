@@ -11,6 +11,7 @@ import {
   Route
 } from "react-router-dom";
 import ER from './component/ER';
+import Error from './component/Error';
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
           <Route path="/Student-Database/insertmarks" element={<div> <Navbar loc="insertmarks" /> <Marks /> </div>} />
           <Route path="/Student-Database/fetchdetails" element={<div> <Navbar loc="fetchdetails" /> <FetchDetail /> </div>} />
           <Route path="/Student-Database/fetchmarks" element={<div> <Navbar loc="fetchmarks" /> <FetchMarks /> </div>} />
+          <Route path="/*" element={<Error />} />
         </Routes>
       </Router>
       {/* <Home /> */}

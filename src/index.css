@@ -19,7 +19,8 @@ input[type=number] {
 
 
 .back {
-    background-image: linear-gradient(#FFFDCD , #A3E6FF );
+    /* background-image: linear-gradient(#FFFDCD , #A3E6FF ); */
+    background-image: linear-gradient(#fffcd8 , #c5eaff );
     
     /* background-color: #D9AFD9;
     background-image: linear-gradient(0deg, #D9AFD9 0%, #97D9E1 100%); */
@@ -125,11 +126,11 @@ input[type=radio] {
 
 .errbtn{
     i{
-        transition: all 0.7s ease-out;
+        transition: all 0.4s ease-out;
     }
 }
 .errbtn:hover{
     i{
-        rotate: -360deg;
+        rotate: -60deg;
     }
 }

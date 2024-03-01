@@ -43,11 +43,11 @@ app.post("/student", async (req, res) => {
     await executeQuery(query2);
     await executeQuery(query3);
 
-    const response = { msg: "success" };
+    const response = { status: true };
     res.json(response);
   } catch (error) {
     console.error(error);
-    const response = { msg: "Failed" };
+    const response = { status: false };
     res.json(response);
   }
 });
@@ -62,11 +62,11 @@ app.post("/marks", async (req, res) => {
 
     await executeQuery(query);
 
-    const response = { msg: "success" };
+    const response = { status: true };
     res.json(response);
   } catch (error) {
     console.error(error);
-    const response = { msg: "Failed" };
+    const response = { status: false };
     res.json(response);
   }
 });

@@ -16,7 +16,7 @@ export default function Navbar(props) {
                                 <Link className={`nav-link ${props.loc === "home" ? "active" : ""}`} aria-current="page" to="/Student-Database">Home</Link>
                             </li>
                             <li className="nav-item">
-                                <Link className={`nav-link ${props.loc === "er" ? "active" : ""}`} aria-current="page" to="/Student-Database/er">ER Diagram</Link>
+                                <Link className={`nav-link ${props.loc === "er" ? "active" : ""}`} aria-current="page" to="/Student-Database/er">Schema</Link>
                             </li>
                             <li className="nav-item">
                                 <Link className={`nav-link ${props.loc === "insertdetails" ? "active" : ""}`} aria-current="page" to="/Student-Database/insertdetails">Insert Details</Link>

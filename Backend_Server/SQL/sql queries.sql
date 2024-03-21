@@ -14,7 +14,7 @@ create table students (
 -- INSERT INTO students VALUES ('Shubham','M','1dt21cs147','2002-12-08');
 
 create table about (
-	usn VARCHAR(10),
+	usn VARCHAR(10) primary key,
     fname varchar(30),
     mname varchar(30),
 	address varchar(50),

@@ -31,7 +31,7 @@ export default function FetchMarks() {
         });
         const result = await response.json();
         setData(result.resp)
-        console.log(result.resp);
+        // console.log(result.resp);
         setLoad(true);
     }
 
@@ -42,7 +42,7 @@ export default function FetchMarks() {
     return (
         <div className='mt-5 pt-5'>
             <form onSubmit={SubmitEvent}>
-                <div className='d-flex justify-content-center gap-5' style={{ flexDirection: "row", width: "100%" }}>
+                <div className='d-flex justify-content-center gap-5' style={{ width: "100%" }}>
                     <div style={{ width: "30%" }}>
                         <label htmlFor="name" className="form-label">Name</label>
                         <input type="text" className="form-control border-2" name="name" id="name"
@@ -70,14 +70,14 @@ export default function FetchMarks() {
                             <option >EEE</option>
                         </select>
                     </div> */}
-                    <div className='d-flex align-items-end' style={{ width: "5%", gap: "1rem" }}>
+                    <div className='d-flex align-items-end gap-3' style={{ width: "5%" }}>
                         <button type="submit" className="btn btn-dark"><i className="fa-solid fa-magnifying-glass" style={{ color: "#ffffff" }}></i></button>
                         <button type="reset" className="btn btn-dark" onClick={resetHandle}><i className="fa-solid fa-eraser" style={{ color: "#ffffff" }}></i></button>
                     </div>
                 </div>
             </form>
-            <div className='mt-5' style={{ width: "100vw" }}>
-                <div style={{ display: "flex", flexDirection: "column", alignItems: "center" }}>
+            <div className='mt-5 mb-3' style={{ width: "100vw" }}>
+                <div className="d-flex align-items-center flex-column">
                     <div className='grid-table2 table-head'>
                         <div><strong>Name</strong></div>
                         <div><strong>USN</strong></div>

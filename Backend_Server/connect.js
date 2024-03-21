@@ -11,9 +11,7 @@ const app = express();
 const port = process.env.PORT || 5000;
 
 app.use(express.json());
-// app.use('/submit', require('./restQueries'));
 app.use(cors());
-// app.use('/submit', require('./restQueries'));
 
 function executeQuery(query) {
   return new Promise((resolve, reject) => {
